@@ -1,0 +1,16 @@
+title: tathastu_week_of_code
+description: Python course
+template:
+  repo: tathastu_week_of_code-template
+  name: tathastu_week_of_code
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
